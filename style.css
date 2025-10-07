@@ -1,0 +1,95 @@
+@font-face {
+    font-family: sun;
+    src: url(./CarltineMedium-MVnzn.ttf);
+}
+
+*body {
+    background-color: #D2C1B6;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    padding: 50px;
+    
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px lightslategray;
+    background-color: white;
+    flex-shrink: 0;
+    
+}
+
+.card1 .items,
+.card2 .items,
+.card3 .items,
+.card4 .items,
+.card5 .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button {
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 7px 20px;
+    border: 2px solid black;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card1 .items img,
+.card2 .items img,
+.card3 .items img,
+.card4 .items img,
+.card5 .items img {    
+    height: 250px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.card1 .items h4,
+.card2 .items h4,
+.card3 .items h4,
+.card4 .items h4,
+.card5 .items h4 {
+    font-family: sun;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card1 button:hover,
+.card2 button:hover,
+.card3 button:hover,
+.card4 button:hover,
+.card5 button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
